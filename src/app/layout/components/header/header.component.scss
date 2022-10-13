@@ -1,0 +1,47 @@
+@import "variables";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  position: fixed;
+  height: $header-height;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: $primary-color;
+  z-index: 10;
+}
+
+.logo {
+  a {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.action-menu {
+  button {
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    padding: 0;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
