@@ -1,27 +1,81 @@
+
 # ZenduForm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+> A ZenduIT/GoFleet activity task Built with `Angular v13.2` and bundled with `Angular CLI`. Visit [https://zendu-form.vercel.app/](https://zendu-form.vercel.app/) for a live version of application.
 
-## Development server
+## Table of contents:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Prerequisites](#prerequisites)
+- [Getting started](#getting-started)
+- [Installation](#installation)
+- [Development and builds](#development-builds)
+- [Dependencies](#dependencies)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## <a name="prerequisites"></a> Prerequisites
+What you need to run this app:
 
-## Build
+- Angular version 13+
+- Angular CLI version 13+
+- Typescript version ~4.5
+- node.js version 12.2+
+- npm (node package manager) version ~8.4
+- Visual studio code version ~1.7
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## <a name="getting-started"> Getting started
 
-## Running unit tests
+### <a name="installation"> Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can install **`[https://github.com/arun-maddheshia/zendu-form/](https://github.com/arun-maddheshia/zendu-form/)`** by simply forking/cloning the repo:
 
-## Running end-to-end tests
+```
+# clone the repo
+$ git clone https://github.com/arun-maddheshia/zendu-form.git [your-project-name]
+$ cd [your-project-name]
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### <a name="development-builds"> Development and builds
 
-## Further help
+Below are the scripts to dev, build, and test this seed project:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Install dependencies
+
+```console
+# use `npm` to install the deps
+$ npm install
+```
+
+#### Development server
+
+```
+# dev server
+$ ng serve
+
+# dev server (AoT compilation)
+$ ng serve --aot
+
+```
+
+- Navigate to `http://localhost:4200/` for the SPA (browser) build.
+
+The app will automatically re-compile if you change any of the source files.
+
+#### Build
+
+```
+# development build
+$ ng build
+
+# production build
+$ npm run build
+
+```
+
+#### Linting
+
+```
+$ ng lint
+```
+
+#### <a name="dependencies"> Dependencies
+- [Angular Material](https://material.angular.io/)
