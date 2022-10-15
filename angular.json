@@ -133,9 +133,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "zendu-form"
+  "defaultProject": "zendu-form",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
