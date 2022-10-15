@@ -1,0 +1,44 @@
+.single-submission {
+  border: 1px solid #B8B9BC;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 16px;
+  position: relative;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 5px;
+  color: #060C1B;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 140px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #060C1B;
+  margin-bottom: 5px;
+
+  span {
+    color: #B8B9BC;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.status {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

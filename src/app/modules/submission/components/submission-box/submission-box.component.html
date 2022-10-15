@@ -1,0 +1,9 @@
+<div class="single-submission">
+  <h4>{{ submission.name }}</h4>
+  <p><span>From: </span>{{ submission.from }}</p>
+  <p><span>To: </span>{{ submission.to }}</p>
+  <p><span>Due Date: </span>{{ submission.due_date | date: 'mediumDate' }}</p>
+  <div class="status">
+    <app-submission-status [status]="submission.status"></app-submission-status>
+  </div>
+</div>

@@ -19,32 +19,32 @@ export class NavComponent implements OnInit {
     return [
       {
         title: 'forms',
-        url: '',
+        url: 'forms',
         icon: 'icon-forms',
       },
       {
         title: 'customers',
-        url: '',
+        url: 'customers',
         icon: 'icon-customers',
       },
       {
         title: 'submissions',
-        url: '',
+        url: 'submissions',
         icon: 'icon-submissions',
       },
       {
         title: 'history',
-        url: '',
+        url: 'history',
         icon: 'icon-history',
       },
       {
         title: 'reports',
-        url: '',
+        url: 'reports',
         icon: 'icon-chart',
       },
       {
         title: 'workflow',
-        url: '',
+        url: 'workflow',
         icon: 'icon-chart',
       },
     ];

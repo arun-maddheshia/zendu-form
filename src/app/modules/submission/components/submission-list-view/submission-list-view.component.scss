@@ -1,0 +1,31 @@
+$cell-padding: 15px;
+
+.page-container {
+  padding: 0 35px;
+}
+
+.table-container {
+  box-shadow: 0px 2px 10px rgba(6, 12, 27, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ECECED;
+  overflow: hidden;
+}
+
+.mat-column-name {
+  text-transform: capitalize;
+}
+
+.mat-cell {
+  font-weight: 400;
+  font-size: 14px;
+  color: #060C1B;
+  padding: $cell-padding;
+}
+
+.mat-header-cell {
+  font-weight: 700;
+  font-size: 14px;
+  color: #060C1B;
+  text-transform: capitalize;
+  padding: $cell-padding;
+}

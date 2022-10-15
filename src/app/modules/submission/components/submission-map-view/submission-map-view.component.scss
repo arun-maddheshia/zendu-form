@@ -1,0 +1,15 @@
+.submission-overview {
+  display: flex;
+  overflow: hidden;
+
+  .submission-list {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 35px;
+  }
+
+  .submission-map {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}

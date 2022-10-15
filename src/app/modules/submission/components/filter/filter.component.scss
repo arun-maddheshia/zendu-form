@@ -1,0 +1,30 @@
+@import "variables";
+
+.filter-area {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-column-left {
+  display: flex;
+
+  .filter-column {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.export-btn {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: $primary-color;
+  background: none;
+  font-size: 16px;
+  border: 0;
+  padding: 15px;
+}

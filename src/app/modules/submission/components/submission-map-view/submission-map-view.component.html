@@ -1,0 +1,10 @@
+<div class="submission-overview">
+  <div class="submission-list">
+    <ng-container *ngFor="let submission of submissions">
+      <app-submission-box [submission]="submission"></app-submission-box>
+    </ng-container>
+  </div>
+  <div class="submission-map">
+    <app-google-map [submissions]="submissions"></app-google-map>
+  </div>
+</div>

@@ -15,6 +15,7 @@ ul {
       text-decoration: none;
       line-height: $header-height;
 
+      &.active,
       &:hover {
         background-color: $primary-color-dark;
       }
