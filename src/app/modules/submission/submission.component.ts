@@ -19,7 +19,7 @@ export class SubmissionComponent implements OnInit {
 
   ngOnInit(): void {
     // Add dummy data
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 15; i++) {
       this.submissions.push(this.createNewSubmission(i));
     }
 
