@@ -1,7 +1,7 @@
 
 # ZenduForm
 
-> A ZenduIT/GoFleet activity task Built with `Angular v13.2` and bundled with `Angular CLI`. Visit [https://zendu-form.vercel.app/](https://zendu-form.vercel.app/) for a live version of application.
+> A ZenduIT/GoFleet activity task Built with `Angular v13.2` and bundled with `Angular CLI`. Visit [https://zendu-form.vercel.app/](https://zendu-form.vercel.app/) for a live version of application. User can filter by status and search with the task title, email.
 
 ## Table of contents:
 
@@ -26,7 +26,7 @@ What you need to run this app:
 
 ### <a name="installation"> Installation
 
-You can install **`[https://github.com/arun-maddheshia/zendu-form/](https://github.com/arun-maddheshia/zendu-form/)`** by simply forking/cloning the repo:
+You can install [https://github.com/arun-maddheshia/zendu-form/](https://github.com/arun-maddheshia/zendu-form/) by simply forking/cloning the repo:
 
 ```
 # clone the repo
