@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+html,
+body {
+  height: 100%;
+}
+
+// Angular Material Custom Form Style
+
+.filter-area {
+  .mat-form-field-appearance-outline {
+    .mat-form-field-wrapper {
+      margin: 0;
+      padding-bottom: 0;
+      text-transform: capitalize;
+    }
+
+    .mat-form-field-flex {
+      margin-top: 0;
+    }
+
+    .mat-form-field-infix {
+      border-top: 0;
+      padding-left: 10px;
+    }
+
+    .mat-form-field-prefix,
+    .mat-form-field-suffix,
+    .mat-form-field-outline {
+      top: 0;
+      color: #B8B9BC;
+    }
+
+    .mat-form-field-outline-thick {
+
+      .mat-form-field-outline-start,
+      .mat-form-field-outline-end,
+      .mat-form-field-outline-gap {
+        border-width: 1px;
+      }
+    }
+
+    &.mat-focused {
+      .mat-form-field-outline-thick {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .mat-select-arrow-wrapper {
+    display: none;
+  }
+}
+
+.calender-column {
+
+  .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,
+  .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+    width: 20px;
+  }
+}
+
+.mat-option-text {
+  text-transform: capitalize;
+}
+
+// Map info window
+.map-infoWindow {
+  width: 275px;
+  max-width: 275px;
+}

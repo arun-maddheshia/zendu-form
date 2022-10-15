@@ -1,0 +1,17 @@
+<div class="submission-overview" *ngIf="submissions.length">
+
+  <div class="submission-list">
+    <ng-container *ngFor="let submission of submissions">
+      <app-submission-box [submission]="submission"></app-submission-box>
+    </ng-container>
+  </div>
+
+  <div class="submission-map">
+    <app-google-map [submissions]="submissions"></app-google-map>
+  </div>
+
+</div>
+
+<div class="empty-message">
+  <app-empty-data [fullBorderStyle]="true" *ngIf="!submissions.length"></app-empty-data>
+</div>

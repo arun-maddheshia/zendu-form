@@ -1,0 +1,16 @@
+<div class="submission-header">
+  <h1>Submissions</h1>
+
+  <app-filter (keywordSearch)="applySearchFilter($event)"
+    (layoutUpdate)="activeLayout = $event"
+    (statusUpdate)="applyStatusFilter($event)">
+  </app-filter>
+</div>
+
+<app-submission-list-view *ngIf="activeLayout === layout.LIST"
+  [submissions]="filteredSearchResults">
+</app-submission-list-view>
+
+<app-submission-map-view *ngIf="activeLayout === layout.MAP"
+  [submissions]="filteredSearchResults">
+</app-submission-map-view>

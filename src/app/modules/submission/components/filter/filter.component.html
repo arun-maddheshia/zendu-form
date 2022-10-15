@@ -1,0 +1,61 @@
+<section class="filter-area">
+  <div class="filter-column-left">
+    <div class="filter-column">
+      <app-search (searchInput)="onKeywordSearch($event)"></app-search>
+    </div>
+    <div class="filter-column">
+      <mat-form-field appearance="outline">
+        <mat-select placeholder="Select Form">
+          <mat-option disabled="true">
+            no data available
+          </mat-option>
+        </mat-select>
+        <mat-icon matSuffix
+          class="icon-arrow-down"></mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="filter-column">
+      <mat-form-field appearance="outline">
+        <mat-select placeholder="Select Status"
+          (selectionChange)="onStatusChange($event.value)">
+          <mat-option *ngFor="let status of submissionStatus | keyvalue"
+            [value]="status.value">
+            {{ status.value}}
+          </mat-option>
+        </mat-select>
+        <mat-icon matSuffix
+          class="icon-arrow-down"></mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="filter-column calender-column">
+      <mat-form-field appearance="outline"
+        (click)="datepicker.open()">
+        <input matInput
+          disabled
+          [matDatepicker]="datepicker"
+          placeholder="Choose a date">
+        <mat-datepicker-toggle matPrefix
+          [for]="datepicker" [disabled]="false">
+          <mat-icon matDatepickerToggleIcon
+            class="icon-calendar"></mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #datepicker [disabled]="false"></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+  </div>
+  <div class="filter-column-right">
+
+    <mat-button-toggle-group #layoutGroup="matButtonToggleGroup"
+      [value]="activeLayout"
+      (change)="onLayoutChange(layoutGroup.value)">
+      <mat-button-toggle [value]="layout.MAP">Map</mat-button-toggle>
+      <mat-button-toggle [value]="layout.LIST">List</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <button class="export-btn"
+      type="button">
+      <i class="icon-paper-download"></i> Export
+    </button>
+  </div>
+</section>
