@@ -13,6 +13,7 @@ import { SubmissionBoxComponent } from './components/submission-box/submission-b
 import { SubmissionListViewComponent } from './components/submission-list-view/submission-list-view.component';
 import { SubmissionMapViewComponent } from './components/submission-map-view/submission-map-view.component';
 import { SubmissionStatusComponent } from './components/submission-status/submission-status.component';
+import { EmptyDataComponent } from './components/empty-data/empty-data.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SubmissionStatusComponent } from './components/submission-status/submis
     SubmissionListViewComponent,
     SubmissionMapViewComponent,
     GoogleMapComponent,
+    EmptyDataComponent,
   ],
   imports: [CommonModule, FormsModule, SubmissionRoutingModule, SharedModule],
 })

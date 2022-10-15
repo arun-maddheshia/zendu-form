@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Submission } from './../../models/submission.model';
 
 @Component({
@@ -6,10 +6,6 @@ import { Submission } from './../../models/submission.model';
   templateUrl: './submission-map-view.component.html',
   styleUrls: ['./submission-map-view.component.scss'],
 })
-export class SubmissionMapViewComponent implements OnInit {
+export class SubmissionMapViewComponent {
   @Input() submissions: Submission[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

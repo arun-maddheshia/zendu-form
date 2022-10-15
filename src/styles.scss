@@ -47,10 +47,6 @@ body {
     }
   }
 
-  .mat-option-text {
-    text-transform: capitalize;
-  }
-  
   .mat-select-arrow-wrapper {
     display: none;
   }
@@ -62,6 +58,10 @@ body {
   .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
     width: 20px;
   }
+}
+
+.mat-option-text {
+  text-transform: capitalize;
 }
 
 // Map info window

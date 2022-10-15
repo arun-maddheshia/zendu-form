@@ -1,10 +1,11 @@
 import {
+  AfterViewInit,
   Component,
+  ElementRef,
   Input,
   OnChanges,
+  SimpleChanges,
   ViewChild,
-  ElementRef,
-  AfterViewInit,
 } from '@angular/core';
 import { Submission } from './../../models/submission.model';
 
@@ -27,9 +28,11 @@ export class GoogleMapComponent implements OnChanges, AfterViewInit {
   mapOptions!: google.maps.MapOptions;
   mapMarkerImage = '/assets/images/marker.png';
 
-  constructor() {}
-
-  ngOnChanges(): void {}
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['submissions'] && changes['submissions'].previousValue) {
+      this.addMap(changes['submissions'].currentValue);
+    }
+  }
 
   ngAfterViewInit(): void {
     this.addMap(this.submissions);
